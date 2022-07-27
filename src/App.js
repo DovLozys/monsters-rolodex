@@ -38,8 +38,6 @@ class App extends Component {
             return monster.name.toLocaleLowerCase().includes(searchField);
         });
 
-        console.log({filteredMonsters})
-
         return (
             <div className="App">
                 <input className='search-box' type='search' placeholder='search monsters' onChange={ onSearchChange } />
